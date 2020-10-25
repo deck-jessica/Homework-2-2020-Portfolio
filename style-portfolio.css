@@ -1,18 +1,22 @@
 :root {
 
 }
-main h1 {
+
+header {
+    overflow: hidden;
+    background-color: aquamarine;
+    padding: 20px 10px;
     display: flex;
-    flex-direction: row;
+}
+header h1 {
+    display: flex;
     justify-content: flex-start;
 }
-main header {
-    flex-direction: row;
-    justify-content: flex-start;
+header nav {
+    
 }
 header nav ul li {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 
 }
