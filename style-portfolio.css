@@ -1,22 +1,57 @@
 :root {
-
+    --dark-color: #223f1e;
+    --light-color: #17af8e;
+    --pink: #f128d7;
 }
-
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
 header {
-    overflow: hidden;
-    background-color: aquamarine;
+    background-color: var(--dark-color);
     padding: 20px 10px;
     display: flex;
+    
 }
 header h1 {
     display: flex;
     justify-content: flex-start;
+    color: var(--light-color);
+    background: var(--dark-color);
 }
-header nav {
-    
-}
-header nav ul li {
+.links {
     display: flex;
+    flex-direction: row;
+}
+.links a {
+    color: var(--light-color);
     justify-content: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+}
+.links a:hover {
+    color: var(--pink);
+}
+}
+#Projects {
+    border: 10px;
+    border-style: dashed;
+    display: flex;
+    flex-flow: row wrap;
+}
+#project1 img {
+    flex: 60%;
+}
+#project2 {
+    flex: 40%;
+}
+#project3 {
+    flex: 40%;
+}
 
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark-color);
 }
