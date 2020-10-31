@@ -42,20 +42,62 @@ main {
     
 }
 .Projects {
+    background-color: var(--dark-color);
+    color: var(--light-color);
     display: flex;
 }
-.wrapper {
+.Projects h2 {
+    text-align: center;
+    border-right-width: 5px;
+    border-right-color: var(--light-color);
+}
+.portfolio {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+}
+.project__img {
+    display: flex;
+    flex: 1 0;
 
 }
-.wrapper .project img {
-  
+#bigproject {
+    flex: 2 0;
 }
+#AboutMe {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+#AboutMe h3 {
+    text-align: center;
+    border-right-width: 5px;
+    border-right-color: var(--light-color);
+}
+#AboutMe p {
+    display: flex;
+    
+}
+#Contact {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#Contact h3 {
+    text-align: center;
+    border-right-width: 5px;
+    border-right-color: var(--light-color);
+}
+#Contact a {
+    display: flex;
+    text-decoration: none;
 
-
-
+}
+#Contact a:hover {
+    color: var(--pink);
+}
 footer {
     padding: 20px;
     text-align: center;
