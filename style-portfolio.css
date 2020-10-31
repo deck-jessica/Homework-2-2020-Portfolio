@@ -3,40 +3,49 @@
     --light-color: #17af8e;
     --pink: #f128d7;
 }
-main {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: content-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 header {
     background-color: var(--dark-color);
     padding: 20px 10px;
     display: flex;
+    flex-wrap: wrap;
     
 }
+
 header h1 {
     display: flex;
-    justify-content: flex-start;
+    flex: 2;
     color: var(--light-color);
-    background: var(--dark-color);
+    align-self: flex-start;
+    flex-wrap: wrap;
 }
-.links {
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
 }
 .links a {
     color: var(--light-color);
-    justify-content: flex-end;
+    flex-direction: row;
     text-decoration: none;
-    list-style-type: none;
+    align-self: stretch;
 }
 .links a:hover {
     color: var(--pink);
 }
-}
-#Projects {
-    border: 10px;
-    border-style: dashed;
+main {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.Projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 #project1 img {
     flex: 60%;
@@ -51,6 +60,7 @@ header h1 {
 
 
 footer {
+    display: flex;
     padding: 20px;
     text-align: center;
     color: var(--dark-color);
