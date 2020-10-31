@@ -43,24 +43,20 @@ main {
 }
 .Projects {
     display: flex;
-    flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
 }
-#project1 img {
-    flex: 60%;
-}
-#project2 {
-    flex: 40%;
-}
-#project3 {
-    flex: 40%;
+.wrapper .project img {
+  
 }
 
 
 
 footer {
-    display: flex;
     padding: 20px;
     text-align: center;
     color: var(--dark-color);
