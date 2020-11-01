@@ -8,6 +8,7 @@ I undertook this project to take the chance to showcase our HTML and CSS knowled
 
 This project can be viewed using any web browser from the link provided.
 
+[Jessica Deck's Portfolio](https://deck-jessica.github.io/Portfolio2020JMD/)
 
 ## Usage 
 
