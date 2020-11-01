@@ -1,46 +1,64 @@
-:root {
+:root { /*custom variables/colors */
     --dark-color: #223f1e;
     --light-color: #17af8e;
     --pink: #f128d7;
 }
-* {
-    box-sizing: content-box;
+* { /*everything follows this */
+    box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+/*header stylings */
 header {
     background-color: var(--dark-color);
     padding: 20px 10px;
+    border-style: solid;
+    border-color: var(--light-color);
+    border-width: 2px;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-evenly; 
 }
 
 header h1 {
     display: flex;
-    flex: 2;
     color: var(--light-color);
     align-self: flex-start;
     flex-wrap: wrap;
 }
-nav {
+/*nav stylings */
+.nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-.links a {
+.nav_link {
+    padding: 0;
+    display: flex;
+}
+
+.nav_item { /*remove bullet points*/
+    list-style: none;
+}
+.nav_links {
     color: var(--light-color);
-    flex-direction: row;
     text-decoration: none;
-    align-self: stretch;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
 }
-.links a:hover {
+.nav_links:hover { /*change color on hover*/
     color: var(--pink);
 }
-main {
+main { /*main content styling*/
+    line-height: 1.6em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     
+    
 }
+/*projects/work stylings... each one in its own flexbox*/
 .Projects {
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -48,21 +66,26 @@ main {
 }
 .Projects h2 {
     text-align: center;
+    align-self: center;
     border-right-width: 5px;
     border-right-color: var(--light-color);
+    margin: 0;
+    padding: 5px;
 }
 .portfolio {
     display: flex;
     flex-wrap: wrap;
 }
 .project__img {
-    display: flex;
-    flex: 1 0;
+    display: block;
+    max-width: 100%;
 
 }
-#bigproject {
-    flex: 2 0;
+.project_imgbig {
+    display: flex;
+    flex-basis: auto;
 }
+/*aboutme stylings, each section throughout is a flex box*/
 #AboutMe {
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -73,12 +96,19 @@ main {
     text-align: center;
     border-right-width: 5px;
     border-right-color: var(--light-color);
+    padding: 5px;
+    margin: 0;
+    align-self: center;
 }
-#AboutMe p {
-    display: flex;
-    
+.AboutMe p {
+    display: flex; 
+    align-self: center; 
 }
-#Contact {
+#AboutMe img {
+    width: 200px;
+    height: 200px;
+}
+#Contact { /*contact info stylings...trying to match NAV links look*/
     background-color: var(--dark-color);
     color: var(--light-color);
     display: flex;
@@ -93,13 +123,20 @@ main {
 #Contact a {
     display: flex;
     text-decoration: none;
+    align-self: center;
 
 }
 #Contact a:hover {
     color: var(--pink);
 }
-footer {
+footer { /*footer stylings*/
     padding: 20px;
     text-align: center;
-    color: var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+@media screen and (max-width: 780px) {
+    main {
+
+    }
 }
