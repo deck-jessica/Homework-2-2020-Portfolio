@@ -14,7 +14,7 @@ This project can be viewed using any web browser from the link provided.
 
 This page can be accessed and utilized to find more information about my experience in the web development field, my background, and a snapshot of my projects thus far. Only one link (the big Horiseon one) is my own work, the rest of the project images and links are placeholders for work to come!
 
-![Portfolio page](portfolioscreenshot.png)
+![Portfolio page](/assets/screenshot.png)
 
 ## Credits
 
