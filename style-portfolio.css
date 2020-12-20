@@ -64,7 +64,8 @@ main { /*main content styling*/
     color: var(--light-color);
     display: flex;
 }
-.Projects h2 {
+ h2 {
+    color: var(--light-color);
     text-align: center;
     align-self: center;
     border-right-width: 5px;
@@ -78,13 +79,10 @@ main { /*main content styling*/
 }
 .project__img {
     display: block;
-    max-width: 100%;
+    width: 200px !important;
+    height: 200px !important;
+}
 
-}
-.project_imgbig {
-    display: flex;
-    flex-basis: auto;
-}
 /*aboutme stylings, each section throughout is a flex box*/
 #AboutMe {
    
