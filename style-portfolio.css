@@ -3,10 +3,12 @@
     --light-color: #17af8e;
     --pink: #f128d7;
 }
+
 * { /*everything follows this */
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*header stylings */
 header {
     background-color: var(--dark-color);
@@ -58,6 +60,7 @@ main { /*main content styling*/
     
     
 }
+
 /*projects/work stylings... each one in its own flexbox*/
 .Projects {
     
@@ -74,15 +77,36 @@ main { /*main content styling*/
     padding: 5px;
 }
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    margin: 20px;
 }
 .project__img {
     display: block;
     width: 200px !important;
     height: 200px !important;
 }
+@media (min-width: 0px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
 
+}
+@media (min-width: 500px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+}
+@media (min-width: 800px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+}
 /*aboutme stylings, each section throughout is a flex box*/
 #AboutMe {
    
