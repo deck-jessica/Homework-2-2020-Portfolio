@@ -1,4 +1,4 @@
-# Homework-2-2020-Portfolio
+# Jessica Deck's Portfolio
 
 ## Portfolio snapshot assignment
 
@@ -12,7 +12,7 @@ This project can be viewed using any web browser from the link provided.
 
 ## Usage 
 
-This page can be accessed and utilized to find more information about my experience in the web development field, my background, and a snapshot of my projects thus far. Only one link (the big Horiseon one) is my own work, the rest of the project images and links are placeholders for work to come!
+This page can be accessed and utilized to find more information about my experience in the web development field, my background, and a snapshot of my projects thus far. We have been utilizing multiple languages such as Javascript, jQuery, MySQL, Node.js, Express, Sequelize, and the list goes on. This portfolio displays my current work thus far in the languages we have covered, and some of my groups' collaborative efforts to bring our vision alive.
 
 ![Portfolio page](/assets/screenshot.png)
 
